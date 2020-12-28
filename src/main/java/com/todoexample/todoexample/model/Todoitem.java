@@ -2,7 +2,7 @@ package com.todoexample.todoexample.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.FieldNameConstants;
+
 
 
 import javax.persistence.*;
@@ -11,8 +11,6 @@ import javax.persistence.*;
 @Data
 @Entity
 @NoArgsConstructor
-@FieldNameConstants
-@Table(name="table")
 public class Todoitem {
 
     @Id
@@ -25,7 +23,5 @@ public class Todoitem {
 
     @Column(columnDefinition = "text")
     private String lastName;
-
-
 
 }
